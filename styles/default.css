@@ -44,6 +44,7 @@ h1, h2, h3, p {
 }
 
 .container {
+
     max-width: 1324px;
     margin: 0 auto;
     padding: 0 15px;
