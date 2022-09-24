@@ -40,8 +40,8 @@ productMore.forEach((btn) => {
     })
 });
 
-modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
+modal.addEventListener('click', ({target}) => {
+    if (target === modal) {
         modal.classList.remove('modal_open');
     }
 });
@@ -57,4 +57,19 @@ formInput.forEach((input, i) => {
             formPlaceholder[i].classList.remove('form__placeholder_active');
         }
     })
+});
+
+//drop-down currency
+
+const countryBtn = document.querySelector('.country__btn');
+const countryWrapper = document.querySelector('.country__wrapper');
+
+countryBtn.addEventListener('click', () => {
+    countryWrapper.classList.toggle('country__wrapper_open');
+});
+
+countryWrapper.addEventListener('click', ({target}) => {
+    if (target.classList.contains('country__choice')) {
+        countryWrapper.classList.remove('country__wrapper_open');
+    }
 })

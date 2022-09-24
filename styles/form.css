@@ -21,7 +21,7 @@
 }
 
 .form__placeholder_active {
-    top: -10px;
+    top: -8px;
 }
 
 .form__input {
@@ -47,5 +47,9 @@
     .form {
         flex-direction: row;
         gap: 22px;
+    }
+
+    .form__placeholder_active {
+        top: -10px;
     }
 }
