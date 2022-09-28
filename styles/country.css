@@ -36,7 +36,7 @@
 }
 
 .country__list {
-    max-height: 98px;
+    max-height: 102px;
 }
 
 .country__item {
@@ -53,9 +53,24 @@
     font-size: 14px;
 }
 
+.country__track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    width: 4px;
+}
+
+.country__scrollbar {
+    background-color: #ececec;
+    border-radius: 2px;
+}
+
 @media(min-width: 1024) {
     .country__list {
-        max-height: 106px;
+        max-height: 120px;
     }
 
     .country__choice {
